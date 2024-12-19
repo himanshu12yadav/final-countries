@@ -1,0 +1,135 @@
+.country-details-container {
+    max-width: 1200px;
+    margin-inline: auto;
+    margin-top: 32px;
+}
+
+.back-button {
+    padding: 6px 24px;
+    box-shadow: 0 0 4px 0px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.country-details {
+    display: flex;
+    align-items: center;
+    gap: 64px;
+    margin-top: 64px;
+}
+
+.country-details img {
+    width: 40%;
+    border: 1px solid #ddd;
+}
+
+.details-text {
+    display: flex;
+    flex-direction: column;
+    row-gap: 12px;
+    column-gap: 64px;
+    max-height: 180px;
+    flex-wrap: wrap;
+}
+
+.details-text p {
+    margin: 0;
+}
+
+.border-countries {
+    margin-top: 48px;
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.border-countries a {
+    padding: 4px 16px;
+    box-shadow: 0 0 4px 0px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+@media (max-width: 940px) {
+    .country-details {
+        flex-direction: column;
+        align-items: flex-start;
+        margin-top: 32px;
+        gap: 16px;
+    }
+
+    .details-text {
+        max-height: unset;
+    }
+
+    .country-details img {
+        width: 100%;
+        max-width: 400px;
+    }
+
+}
+
+
+/* country not found */
+
+.error-container {
+    min-height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+}
+
+.error-content {
+    background: var(--elements);
+    padding: 3rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    max-width: 500px;
+    width: 100%;
+}
+
+.error-icon {
+    color: var(--text);
+    margin-bottom: 1.5rem;
+}
+
+.error-title {
+    color: var(--text);
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    font-weight: 800;
+}
+
+.error-message {
+    color: var(--text);
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 2rem;
+    opacity: 0.9;
+}
+
+.error-button {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 0.75rem 1.5rem;
+    background: var(--text);
+    color: var(--elements);
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: 600;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.error-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.error-button:active {
+    transform: translateY(0);
+}
+

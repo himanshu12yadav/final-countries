@@ -1,0 +1,93 @@
+/* Card Detail Page shimmer code */
+
+.shimmer {
+    background: #e3e3e3;
+    background: linear-gradient(90deg,
+    #e3e3e3 0%,
+    #d6d6d6 50%,
+    #e3e3e3 100%);
+    background-size: 200% 100%;
+    animation: shimmer 1.5s infinite linear;
+}
+
+@keyframes shimmer {
+    0% {
+        background-position: -200% 0;
+    }
+    100% {
+        background-position: 200% 0;
+    }
+}
+
+
+.flag-shimmer {
+    width: 400px;
+    height: 300px;
+    border-radius: 8px;
+}
+
+.title-shimmer {
+    width: 200px;
+    height: 40px;
+    margin-bottom: 20px;
+}
+
+.text-line-shimmer {
+    width: 300px;
+    height: 20px;
+    margin: 10px 0;
+}
+
+.border-countries-shimmer {
+    width: 400px;
+    height: 40px;
+    margin-top: 20px;
+}
+
+
+/* CountriesList shimmer code */
+.countries-shimmer-container {
+    max-width: 1200px;
+    margin-top: 16px;
+    display: flex;
+    gap: 64px;
+    flex-wrap: wrap;
+    margin-inline: auto;
+    justify-content: space-between;
+}
+
+.country-card-shimmer {
+    width: 250px;
+    height: 350px;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 0 8px 0px rgba(0, 0, 0, 0.2);
+}
+
+.flag-card-shimmer {
+    width: 100%;
+    height: 150px;
+}
+
+.card-content-shimmer {
+    padding: 16px;
+}
+
+.card-title-shimmer {
+    width: 80%;
+    height: 24px;
+    margin-bottom: 16px;
+    margin-top: 16px;
+}
+
+.card-text-shimmer {
+    width: 60%;
+    height: 16px;
+    margin-bottom: 8px;
+}
+
+@media (max-width: 768px) {
+    .countries-shimmer-container {
+        justify-content: center;
+    }
+}
